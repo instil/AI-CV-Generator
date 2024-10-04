@@ -62,5 +62,5 @@ class Conversation:
         chat_history.add_ai_message(str(response))
         return response
 
-    def convert_to_rego(self, session_id: str):
+    def convert_to_cv(self, session_id: str):
         return self.invoke_conversation(PROMPT, session_id)
